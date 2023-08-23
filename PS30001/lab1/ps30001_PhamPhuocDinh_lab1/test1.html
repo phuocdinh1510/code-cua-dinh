@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <img id="den" src="img/tat.jpg" alt="">
+        <button onclick="bongden(1)">Mở</button>
+        <button onclick="bongden(0)">Tắt</button>
+    </div>
+    <script>
+        function bongden(x) {
+    var l = document.getElementById("den")
+    if(x == 1){
+        l.src='img/mo.jpg'
+    }else{
+        l.src='img/tat.jpg'
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Thời điểm hiện tại</title>
+  </head>
+  <body>
+    <h1>Thời điểm hiện tại</h1>
+    <p id="currentTime"></p>
+
+    <script>
+      function showTime() {
+        // Lấy thời gian hiện tại
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var s = now.getSeconds();
+
+        // Hiển thị thời gian
+        document.getElementById("currentTime").innerHTML = h + ":" + m + ":" + s;
+
+        // Gọi lại hàm sau 1 giây
+        setTimeout(function() {
+          location.reload(); // Cập nhật lại trang web
+        }, 1000);
+      }
+
+      showTime(); // Gọi hàm để hiển thị thời gian
+    </script>
+  </body>
+</html>

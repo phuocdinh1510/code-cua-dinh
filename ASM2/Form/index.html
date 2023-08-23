@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Hiển thị form đăng ký thông tin</h1>
+    <form action="" class="box">
+        <input type="text" onchange="checkName(this.value)" id="name" placeholder="Nhập tên">
+        <br>
+        <p id="name-error"></p>
+        <br>
+        <input type="text" onchange="checkAge(this.value)" id="age" placeholder="Nhập tuổi">
+        <br>
+        <p id="age-error"></p>
+        <br>
+        <input type="text" onchange="checkAddress(this.value)" id="address" placeholder="Nhập địa chỉ">
+        <br>
+        <p id="address-error"></p>
+        <br>
+        <input type="text" onchange="checkPhone(this.value)" id="phone" placeholder="Nhập số điện thoại">
+        <br>
+        <p id="phone-error"></p>
+        <br>
+        <input type="text" name="email" id="email" placeholder="Nhập email">
+        <br>
+        <input type="submit" value="Đăng kí" placeholder="Đăng ký">
+    </form>
+    <script src="/ASM2/Form/index.js"></script>
+</body>
+</html>

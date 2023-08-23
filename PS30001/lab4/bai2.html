@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+  </head>
+  <body>
+    <h1>Student Information</h1>
+    <label for="fullName">Họ và Tên:</label>
+    <input type="text" id="fullName"><br><br>
+    <label for="score">Điểm:</label>
+    <input type="number" step="0.01" id="score"><br><br>
+    <button onclick="showInfo()">Kết quả</button>
+    
+    <script>
+      // Tạo đối tượng sinh viên
+      var student = new Object();
+      
+      // Khai báo các thuộc tính của đối tượng
+      student.hoTen = "";
+      student.diem = 0;
+      student.hocLuc = "";
+      
+      function showInfo() {
+        // Nhập thông tin từ người dùng
+        student.hoTen = document.getElementById("fullName").value;
+        student.diem = parseFloat(document.getElementById("score").value);
+        
+        // Xếp loại học lực
+        if(student.diem >= 5) {
+          student.hocLuc = "Đậu";
+        } else {
+          student.hocLuc = "Rớt";
+        }
+        
+        // Hiển thị thông tin sinh viên và học lực
+        document.write("<h3>Họ và tên: " + student.hoTen + "</h3>");
+        document.write("<h3>Điểm TB: " + student.diem + "</h3>");
+        document.write("<h3>Học lực: " + student.hocLuc + "</h3>");
+      }
+    </script>
+  </body>
+</html>

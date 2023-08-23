@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Danh mục sản phẩm</title>
+  </head>
+  <body>
+    <h1>Danh mục sản phẩm</h1>
+    
+    <script>
+      // 1. Tạo một mảng inventory lưu trữ các sản phẩm
+      var inventory = [];
+      
+      // 2. Tạo 3 đối tượng item với các thuộc tính
+      var item1 = {name: "iPhone", model: "12 Pro", cost: 1000, quantity: 10};
+      var item2 = {name: "Samsung", model: "Galaxy S21", cost: 800, quantity: 20};
+      var item3 = {name: "Google", model: "Pixel 5", cost: 700, quantity: 15};
+      
+      // 3. Đưa 3 đối tượng vào mảng chính
+      inventory.push(item1);
+      inventory.push(item2);
+      inventory.push(item3);
+      
+      console.log(inventory); // Xuất inventory array
+      
+      // 4. Truy xuất quantity của item thứ 3
+      console.log("Quantity of item 3: " + inventory[2].quantity);
+      
+      // 5. Thêm và truy xuất thêm các phần tử khác từ mảng chính
+      inventory.push({name: "LG", model: "G8", cost: 500, quantity: 5});
+      inventory.push({name: "Motorola", model: "Moto G Power", cost: 300, quantity: 25});
+      
+      console.log(inventory); // Xuất mảng inventory sau khi thêm các phần tử mới
+    </script>
+  </body>
+</html>

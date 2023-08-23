@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Hình</th>
+                <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody id="product">
+        </tbody>
+    </table>
+    <script>
+        const arrSP = [
+            {
+                tenSP: "Điện thoại IPhone 144 Pro Max 128GB",
+                hinh: "/ASM2/img/samsung-galaxy-a34-5g-bac-thumb-200x200.jpg",
+                gia: "27.000.000"
+            },
+            {
+                tenSP: "Điện thoại SamSung Galaxy A34 5G 256GB",
+                hinh: "/ASM2/img/samsung-galaxy-a34-5g-bac-thumb-200x200.jpg",
+                gia: "5.000.000"
+            },
+            {
+                tenSP: "Điện thoại Oppo A57 128GB",
+                hinh: "/ASM2/img/samsung-galaxy-a34-5g-bac-thumb-200x200.jpg",
+                gia: "4.590.000"
+            }
+        ]
+
+        const products = document.getElementById('product');
+        let html = '';
+      
+        for (let i = 0; i < arrSP.length; i++) {
+            const arr = arrSP[i];
+            html +=
+                `
+                <tr>
+                    <td>${arr.tenSP}</td>
+                    <td><img src="${arr.hinh}" alt="Hình sản phẩm"></td>
+                    <td>${arr.gia}</td>
+                </tr>
+            `
+        }
+        products.innerHTML = html;
+    </script>
+</body>
+
+</html>

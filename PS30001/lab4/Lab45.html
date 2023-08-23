@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab45</title>
+</head>
+<body>
+	<button onclick="openNewWindow()">Mở cửa sổ mới</button>
+	<button onclick="closeNewWindow()">Đóng cửa sổ mới</button>
+	<button onclick="checkNewWindow()">Kiểm tra cửa sổ mới đã đóng hay chưa</button>
+
+	<script type="text/javascript">
+		var newWindow;
+
+		function openNewWindow() {
+			if (navigator.userAgent.indexOf('MSIE') !== -1) {
+				newWindow = window.open('', '', 'toolbar=yes,menu=yes,width=100,height=100');
+			} else {
+				newWindow = window.open('', '', 'toolbar=yes,menu=yes,width=150,height=150');
+			}
+		}
+
+		function closeNewWindow() {
+			if (newWindow && !newWindow.closed) {
+				newWindow.close();
+			}
+		}
+
+		function checkNewWindow() {
+			if (newWindow && newWindow.closed) {
+				alert('Cửa sổ mới đã được đóng!');
+			} else {
+				alert('Cửa sổ mới chưa được đóng!');
+			}
+		}
+	</script>
+</body>
+</html>

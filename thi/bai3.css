@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 500px;
+    height: auto;
+    margin: 100px  auto;
+}
+
+h1 {
+    margin: 12px 0;
+    text-align: center;
+    color: blue;
+}
+
+td {
+    padding: 12px;
+}
+
+th {
+    padding: 12px;
+}

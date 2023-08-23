@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Caculator</title>
+</head>
+<style>
+	*{
+		margin: 10px 10px;
+		text-align: center;
+	}
+	.Caculator{
+		border-radius: 50px;
+		border: 1px solid black;
+		background-color:	#CC99FF;
+		width: 80%;
+	}
+	input {
+		border: 1px solid black;
+		width: 45px;
+		height: 45px;
+		color: black;
+		font-weight: bold;
+		border-radius: 5px;
+	}
+	.kq{
+		width: 8.9%;
+		height: 42px;
+	}
+</style>
+
+<body>
+	<div class="Caculator">
+		<input class="kq" type="text" id="kq" readonly>
+	<input class="xoa" type="button" value="C" onclick="xoaKetQua()">
+	<br>
+	<input type="button" value="1" onclick="chonSo(1)">
+	<input type="button" value="2" onclick="chonSo(2)">
+	<input type="button" value="3" onclick="chonSo(3)">
+	<input type="button" value="+" onclick="chonPhepTinh('+')">
+	<br>
+	<input type="button" value="4" onclick="chonSo(4)">
+	<input type="button" value="5" onclick="chonSo(5)">
+	<input type="button" value="6" onclick="chonSo(6)">
+	<input type="button" value="-" onclick="chonPhepTinh('-')">
+	<br>
+	<input type="button" value="7" onclick="chonSo(7)">
+	<input type="button" value="8" onclick="chonSo(8)">
+	<input type="button" value="9" onclick="chonSo(9)">
+	<input type="button" value="*" onclick="chonPhepTinh('*')">
+	<br>
+	<input type="button" value="0" onclick="chonSo(0)">
+	<input type="button" value="." onclick="chonSo('.')">
+	<input type="button" value="=" onclick="tinhToan()">
+	<input type="button" value="/" onclick="chonPhepTinh('/')">
+	</div>
+	
+</body>
+<script src="mt.js"></script>
+
+
+</html>

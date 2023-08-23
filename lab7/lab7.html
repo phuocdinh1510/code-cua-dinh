@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab7.css">
+    <script src="lab7.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Đặt Hàng</h1>
+    <form action="" class="form">
+        <input type="text" placeholder="Ten san Pham" id="name"> 
+        <br>
+        <select name="" id="type">
+            <option value="">Loai 1</option>
+            <option value="">Loai 2</option>
+            <option value="">Loai 3</option>
+
+        </select>
+        <br>
+        <input id="price" type="number" placeholder="Don gia">
+        <br>
+        <input type="radio" name="location">Nội Thành
+        <input type="radio" name="location">Ngoai Thanh
+        <br>
+        <input id="fee" type="number" readonly>
+        <br>
+        <input type="button" value="Dat Hang" onclick="checkNameAndPrice()">
+        <p id="form-error"></p>
+    </form>
+</body>
+</html>

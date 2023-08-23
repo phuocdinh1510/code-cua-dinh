@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sản Phẩm</h1><br>
+    <input type="text" placeholder="Nhập tên sản phẩm" id="ten"><br>
+    <input type="text" placeholder="Nhập Giá Sản Phẩm" id="gia"><br>
+    <input type="text" placeholder="Nhập Số Lượng" id="soLuong"><br>
+    <input type="button" value="Tính" onclick="tinhtien()">
+
+    <script>
+function tinhtien() {
+    var tenSP = document.getElementById("ten").value;
+    var donGia = document.getElementById("gia").value;
+    var SL = document.getElementById("soLuong").value;
+
+    var thanhtien = donGia * SL;
+
+    alert("Thành tiền: " + thanhtien + "");
+}
+    </script>
+</body>
+</html>
